@@ -1,6 +1,7 @@
 package ch.fhnw.swc.mrs.data;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.util.List;
 
 import ch.fhnw.swc.mrs.model.MRSServices;
@@ -9,7 +10,7 @@ import ch.fhnw.swc.mrs.model.Rental;
 import ch.fhnw.swc.mrs.model.User;
 
 public class DbMRSServices implements MRSServices {
-    private static final String DB_CONNECTION = "jdbc:hsqldb:mem:mrs";
+    private static final String DB_CONNECTION = "jdbc:hsqldb:file:mrs";
 	private Database db;
 	
 	private MovieDAO getMovieDAO() { 
@@ -156,7 +157,7 @@ public class DbMRSServices implements MRSServices {
 	
 	private Connection getConnection() {
 	    try {
-            return db.getConnection();
+			return db.getConnection();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
