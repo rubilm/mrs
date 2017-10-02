@@ -37,7 +37,7 @@ import ch.fhnw.swc.mrs.model.User;
 
 public class ITUserDao extends DBTestCase {
 
-	/** Class under test: UserDAO. */  
+	/** Class under test: UserDAO. */
 	private UserDAO dao;
     private IDatabaseTester tester;
     private Connection connection;
