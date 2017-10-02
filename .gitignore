@@ -2,6 +2,7 @@
 /log/
 /.settings/
 /.idea/
+<<<<<<< HEAD
 .checkstyle
 mrs.log
 mrs.properties
@@ -9,3 +10,6 @@ mrs.script
 testdb.log
 testdb.properties
 testdb.script
+=======
+/MRSfx.iml
+>>>>>>> 9908ae39251ed902e056a82de10b2a09980186fe
