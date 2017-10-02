@@ -3,3 +3,9 @@
 /.settings/
 /.idea/
 .checkstyle
+mrs.log
+mrs.properties
+mrs.script
+testdb.log
+testdb.properties
+testdb.script
