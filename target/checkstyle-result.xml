@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.11.2">
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/model/RegularPriceCategory.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/model/ChildrenPriceCategory.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/model/PriceCategory.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/model/LowStockListener.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/model/User.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/model/MRSServices.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/model/Stock.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/model/MovieRentalException.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/model/NewReleasePriceCategory.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/model/Rental.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/model/Movie.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/model/package-info.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/view/MRSServiceUtilizer.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/view/RentMovieController.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/view/MRSController.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/view/MovieController.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/view/RentalController.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/view/package-info.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/view/UserController.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/MovieRentalSystem.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/data/MovieDAO.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/data/UserDAO.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/data/Database.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/data/SQLRentalDAO.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/data/AbstractDAO.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/data/SQLMovieDAO.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/data/DAO.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/data/RentalDAO.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/data/HsqlDatabase.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/data/DbMRSServices.java">
+<error line="4" column="8" severity="warning" message="Unused import - java.sql.DriverManager." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/data/SQLUserDAO.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/data/package-info.java">
+</file>
+<file name="/Users/marcoghilardelli/Documents/FHNW/stqm/mrs_stqm/src/main/java/ch/fhnw/swc/mrs/package-info.java">
+</file>
+</checkstyle>

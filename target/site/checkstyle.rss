@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>Movie Rental System - Checkstyle report</title>
+    <link>https://web.fhnw.ch/plattformen/swc/</link>
+    <description>Movie Rental System - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2017</copyright>
+    <item>
+      <title>File: 33,
+             Errors: 0,
+             Warnings: 1,
+             Infos: 0
+      </title>
+            <link>https://web.fhnw.ch/plattformen/swc//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.data.MovieDAO.java">ch/fhnw/swc/mrs/data/MovieDAO.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.model.MRSServices.java">ch/fhnw/swc/mrs/model/MRSServices.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.view.RentalController.java">ch/fhnw/swc/mrs/view/RentalController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.MovieRentalSystem.java">ch/fhnw/swc/mrs/MovieRentalSystem.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.data.SQLRentalDAO.java">ch/fhnw/swc/mrs/data/SQLRentalDAO.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.model.PriceCategory.java">ch/fhnw/swc/mrs/model/PriceCategory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.data.SQLUserDAO.java">ch/fhnw/swc/mrs/data/SQLUserDAO.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.model.RegularPriceCategory.java">ch/fhnw/swc/mrs/model/RegularPriceCategory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.model.User.java">ch/fhnw/swc/mrs/model/User.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.view.RentMovieController.java">ch/fhnw/swc/mrs/view/RentMovieController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.model.ChildrenPriceCategory.java">ch/fhnw/swc/mrs/model/ChildrenPriceCategory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.model.Movie.java">ch/fhnw/swc/mrs/model/Movie.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.view.MRSServiceUtilizer.java">ch/fhnw/swc/mrs/view/MRSServiceUtilizer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.view.UserController.java">ch/fhnw/swc/mrs/view/UserController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.data.HsqlDatabase.java">ch/fhnw/swc/mrs/data/HsqlDatabase.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.data.Database.java">ch/fhnw/swc/mrs/data/Database.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.model.Stock.java">ch/fhnw/swc/mrs/model/Stock.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.model.Rental.java">ch/fhnw/swc/mrs/model/Rental.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.model.LowStockListener.java">ch/fhnw/swc/mrs/model/LowStockListener.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.view.package-info.java">ch/fhnw/swc/mrs/view/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.data.AbstractDAO.java">ch/fhnw/swc/mrs/data/AbstractDAO.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.model.MovieRentalException.java">ch/fhnw/swc/mrs/model/MovieRentalException.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.data.SQLMovieDAO.java">ch/fhnw/swc/mrs/data/SQLMovieDAO.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.model.NewReleasePriceCategory.java">ch/fhnw/swc/mrs/model/NewReleasePriceCategory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.model.package-info.java">ch/fhnw/swc/mrs/model/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.data.UserDAO.java">ch/fhnw/swc/mrs/data/UserDAO.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.data.DAO.java">ch/fhnw/swc/mrs/data/DAO.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.data.DbMRSServices.java">ch/fhnw/swc/mrs/data/DbMRSServices.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.data.package-info.java">ch/fhnw/swc/mrs/data/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.view.MRSController.java">ch/fhnw/swc/mrs/view/MRSController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.view.MovieController.java">ch/fhnw/swc/mrs/view/MovieController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.data.RentalDAO.java">ch/fhnw/swc/mrs/data/RentalDAO.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://web.fhnw.ch/plattformen/swc//checkstyle.html#ch.fhnw.swc.mrs.package-info.java">ch/fhnw/swc/mrs/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

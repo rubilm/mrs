@@ -8,11 +8,10 @@ import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mockito;
 
 public class StatementTest {
-    
-    private StatementImp s;
+
+    private StatementImpl s;
 
     private List<Rental> rentals;
 
@@ -30,25 +29,42 @@ public class StatementTest {
 
     @Test
     public void testStatement() {
-        s = new StatementImp("Muster", "Hans", rentals);
+        s = new StatementImpl("Muster", "Hans", rentals);
+
         assertEquals("Muster", s.getLastName());
         assertEquals("Hans", s.getFirstName());
         assertEquals(3, s.getRentals().size());
     }
 
-    @Test(expected=IllegalArgumentException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void testFirstName() {
-        new StatementImp("Muster", "Maximilian", rentals);
+        new StatementImpl("Muster", "Maximilian", rentals);
+
     }
 
-    @Test(expected=IllegalArgumentException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void testLastName() {
-       new StatementImp("Mustermann", "Hans", rentals);
+        new StatementImpl("Mustermann", "Hans", rentals);
     }
 
-    @Test(expected=IllegalArgumentException.class)
+
+    @Test(expected = IllegalArgumentException.class)
     public void testRentals() {
-       new StatementImp("Muster", "Hans", null);
+        new StatementImpl("Muster", "Hans", null);
     }
 
 }
+
+class StatementImpl extends Statement {
+    public StatementImpl(String name, String firstName, List<Rental> rentals) {
+        super(name, firstName, rentals);
+    }
+
+    @Override
+    public String print() {
+        return getFirstName() + getLastName();
+    }
+}
+
+
+

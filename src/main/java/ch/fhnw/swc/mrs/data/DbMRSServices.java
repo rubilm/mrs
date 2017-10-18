@@ -1,6 +1,7 @@
 package ch.fhnw.swc.mrs.data;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.util.List;
 
 import ch.fhnw.swc.mrs.model.*;
@@ -155,7 +156,7 @@ public class DbMRSServices implements MRSServices {
 	
 	private Connection getConnection() {
 	    try {
-            return db.getConnection();
+			return db.getConnection();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
