@@ -10,8 +10,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class StatementTest {
-    
-    private Statement s;
+
+    private StatementImpl s;
+
     private List<Rental> rentals;
 
     @Before
@@ -29,34 +30,41 @@ public class StatementTest {
     @Test
     public void testStatement() {
         s = new StatementImpl("Muster", "Hans", rentals);
+
         assertEquals("Muster", s.getLastName());
         assertEquals("Hans", s.getFirstName());
         assertEquals(3, s.getRentals().size());
     }
 
-    @Test(expected=IllegalArgumentException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void testFirstName() {
         new StatementImpl("Muster", "Maximilian", rentals);
+
     }
 
-    @Test(expected=IllegalArgumentException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void testLastName() {
-       new StatementImpl("Mustermann", "Hans", rentals);
+        new StatementImpl("Mustermann", "Hans", rentals);
     }
 
-    @Test(expected=IllegalArgumentException.class)
+
+    @Test(expected = IllegalArgumentException.class)
     public void testRentals() {
-       new StatementImpl("Muster", "Hans", null);
+        new StatementImpl("Muster", "Hans", null);
     }
 
 }
 
- class StatementImpl extends Statement {
-    public StatementImpl(String name, String firstName, List<Rental> rentals ) {
+class StatementImpl extends Statement {
+    public StatementImpl(String name, String firstName, List<Rental> rentals) {
         super(name, firstName, rentals);
     }
+
     @Override
     public String print() {
         return getFirstName() + getLastName();
     }
 }
+
+
+

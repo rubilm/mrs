@@ -128,10 +128,10 @@ public class DbMRSServices implements MRSServices {
 	public boolean createRental(User u, Movie m) {
 	    Rental r = new Rental(u, m);
 	    try {
-	    	getRentalDAO().save(r);
+	        getRentalDAO().save(r);
 			Bill b = new Bill(u.getFirstName(), u.getName(), u.getRentals());
 			System.out.println(b.print());
-	        m.setRented(true);
+			m.setRented(true);
 	        getMovieDAO().saveOrUpdate(m);
 	    } catch (Exception e) {
 	        e.printStackTrace();
