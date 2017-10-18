@@ -4,10 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.List;
 
-import ch.fhnw.swc.mrs.model.MRSServices;
-import ch.fhnw.swc.mrs.model.Movie;
-import ch.fhnw.swc.mrs.model.Rental;
-import ch.fhnw.swc.mrs.model.User;
+import ch.fhnw.swc.mrs.model.*;
 
 public class DbMRSServices implements MRSServices {
     private static final String DB_CONNECTION = "jdbc:hsqldb:file:mrs";
@@ -131,7 +128,9 @@ public class DbMRSServices implements MRSServices {
 	public boolean createRental(User u, Movie m) {
 	    Rental r = new Rental(u, m);
 	    try {
-	        getRentalDAO().save(r);
+	    	getRentalDAO().save(r);
+			Bill b = new Bill(u.getFirstName(), u.getName(), u.getRentals());
+			System.out.println(b.print());
 	        m.setRented(true);
 	        getMovieDAO().saveOrUpdate(m);
 	    } catch (Exception e) {
