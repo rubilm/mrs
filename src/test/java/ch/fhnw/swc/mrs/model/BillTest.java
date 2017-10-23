@@ -30,14 +30,14 @@ public class BillTest {
 
     private List<Rental> createRentalList() {
         List<Rental> rentals = new ArrayList<>(3);
-       
+
         Movie m1 = mock(Movie.class);
         Movie m2 = mock(Movie.class);
         Movie m3 = mock(Movie.class);
         when(m1.getTitle()).thenReturn("Avatar");
         when(m2.getTitle()).thenReturn("Casablanca");
         when(m3.getTitle()).thenReturn("Tron");
-        
+
         Rental r1 = mock(Rental.class);
         Rental r2 = mock(Rental.class);
         Rental r3 = mock(Rental.class);
@@ -50,12 +50,12 @@ public class BillTest {
         when(r1.getRentalFee()).thenReturn(8.4);
         when(r2.getRentalFee()).thenReturn(17.2);
         when(r3.getRentalFee()).thenReturn(26.4);
-        
+
         rentals.add(r1);
         rentals.add(r2);
         rentals.add(r3);
 
         return rentals;
     }
-    
+
 }

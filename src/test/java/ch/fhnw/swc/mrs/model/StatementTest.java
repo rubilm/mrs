@@ -9,10 +9,23 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * This class demonstrates testing an abstract class by
+ * deriving a concrete class.
+ *
+ */
 public class StatementTest {
 
-    private StatementImpl s;
+    private static final class TestStatement extends Statement {
+        public TestStatement(String name, String firstName, List<Rental> rentals) {
+            super(name, firstName, rentals);
+        }
 
+        @Override
+        public String print() { return ""; }
+    }
+
+    private Statement s;
     private List<Rental> rentals;
 
     @Before
@@ -29,42 +42,25 @@ public class StatementTest {
 
     @Test
     public void testStatement() {
-        s = new StatementImpl("Muster", "Hans", rentals);
-
+        s = new TestStatement("Muster", "Hans", rentals);
         assertEquals("Muster", s.getLastName());
         assertEquals("Hans", s.getFirstName());
         assertEquals(3, s.getRentals().size());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expected=IllegalArgumentException.class)
     public void testFirstName() {
-        new StatementImpl("Muster", "Maximilian", rentals);
-
+        new TestStatement("Muster", "Maximilian", rentals);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expected=IllegalArgumentException.class)
     public void testLastName() {
-        new StatementImpl("Mustermann", "Hans", rentals);
+        new TestStatement("Mustermann", "Hans", rentals);
     }
 
-
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expected=IllegalArgumentException.class)
     public void testRentals() {
-        new StatementImpl("Muster", "Hans", null);
+        new TestStatement("Muster", "Hans", null);
     }
 
 }
-
-class StatementImpl extends Statement {
-    public StatementImpl(String name, String firstName, List<Rental> rentals) {
-        super(name, firstName, rentals);
-    }
-
-    @Override
-    public String print() {
-        return getFirstName() + getLastName();
-    }
-}
-
-
-

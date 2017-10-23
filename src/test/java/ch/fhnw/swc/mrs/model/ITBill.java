@@ -1,85 +1,117 @@
 package ch.fhnw.swc.mrs.model;
 
+import ch.fhnw.swc.mrs.data.DbMRSServices;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 public class ITBill {
 
-    private Movie m1;
-    private Movie m2;
-    private User u1;
-    private User u2;
+    Movie m;
+    User u;
+    ByteArrayOutputStream baos;
+    PrintStream outStream;
 
-
+    /**
+     * Create a movie valid movie.
+     * Create a valid user.
+     * Redirect standard out to baos and save original for backup.
+     */
     @Before
-    public void setup(){
-        m1 = new Movie();
-        m1.setTitle("Avatar");
-        m1.setAgeRating(3);
-        m1.setPriceCategory(RegularPriceCategory.getInstance());
+    public void setup() {
+        m = new Movie();
+        m.setTitle("Avatar");
+        m.setAgeRating(3);
+        m.setPriceCategory(RegularPriceCategory.getInstance());
 
-        m2 = new Movie();
+        u = new User("Jenny", "Zoë", LocalDate.of(1974, 3, 16));
 
-        u1 = new User("Hunziker", "Hans", LocalDate.of(1960,2,12));
-
-
+        // redirect system.out to be able to verify the correct output
+        outStream = System.out;
+        baos = new ByteArrayOutputStream();
+        PrintStream ps = new PrintStream(baos, true);
+        System.setOut(ps);
     }
 
+    /**
+     * Restore redirected system.out.
+     */
+    @After
+    public void teardown() {
+        System.setOut(outStream);
+    }
+
+    /**
+     * Test correct order of string parameters.
+     * Expect correct order as in test with lines[2].
+     */
     @Test
-    public void ITtest(){
-        Bill b = new Bill("Muster", "Hans", createRentalList());
+    public void testPrintRegularUsername() {
+        DbMRSServices dbservice = new DbMRSServices();
+        dbservice.init();
+        assertTrue(dbservice.createRental(u, m));
 
-        System.out.println(b.print());
-
+        String statement = baos.toString();
+        String[] lines = statement.split("\\n");
+        assertEquals("Statement", lines[0]);
+        assertEquals("=========", lines[1]);
+        assertEquals("for: Zoë Jenny", lines[2]);
+        assertEquals("", lines[3]);
+        assertEquals("Days   Price  Title", lines[4]);
+        assertEquals("-------------------", lines[5]);
+        assertEquals("   0    0.00  Avatar", lines[6]);
     }
 
+    /**
+     * Test length of first name argument.
+     * Expect that nothing has been changed on the db.
+     */
     @Test
-    public void testPrintRegularUSername(){
+    public void testPrintLongFirstNameUsername() {
+        DbMRSServices dbservice = new DbMRSServices();
+        dbservice.init();
+        User longFN = new User("Tolkien", "John Ronald Reuel", LocalDate.of(1892, 1, 3));
 
+        assertFalse(dbservice.createRental(longFN, m));
     }
 
+    /**
+     * Test length of last name argument.
+     * Expect that nothing has been changed on the db.
+     */
     @Test
-    public void testPrintLongUsername(){
+    public void testPrintLongNameUsername() {
+        DbMRSServices dbservice = new DbMRSServices();
+        dbservice.init();
+        User longN = new User("de Cervantes Saavedra", "Miguel", LocalDate.of(1547, 9, 29));
 
+        assertFalse(dbservice.createRental(longN, m));
     }
 
+    /**
+     * Test null argument for rental list.
+     * Does NullPointerException show in the caller? Or is it caught
+     * in the callee and a boolean value is returned?
+     */
+    @Test
+    public void testPrintNoRentals() {
+        DbMRSServices dbservice = new DbMRSServices();
+        dbservice.init();
 
+        assertFalse(dbservice.createRental(u, null));
 
-    private List<Rental> createRentalList() {
-        List<Rental> rentals = new ArrayList<>(3);
-
-        Movie m1 = mock(Movie.class);
-        Movie m2 = mock(Movie.class);
-        Movie m3 = mock(Movie.class);
-        when(m1.getTitle()).thenReturn("Avatar");
-        when(m2.getTitle()).thenReturn("Casablanca");
-        when(m3.getTitle()).thenReturn("Tron");
-
-        Rental r1 = mock(Rental.class);
-        Rental r2 = mock(Rental.class);
-        Rental r3 = mock(Rental.class);
-        when(r1.getMovie()).thenReturn(m1);
-        when(r2.getMovie()).thenReturn(m2);
-        when(r3.getMovie()).thenReturn(m3);
-        when(r1.getRentalDays()).thenReturn(1L);
-        when(r2.getRentalDays()).thenReturn(2L);
-        when(r3.getRentalDays()).thenReturn(3L);
-        when(r1.getRentalFee()).thenReturn(8.4);
-        when(r2.getRentalFee()).thenReturn(17.2);
-        when(r3.getRentalFee()).thenReturn(26.4);
-
-        rentals.add(r1);
-        rentals.add(r2);
-        rentals.add(r3);
-
-        return rentals;
     }
 
 }
