@@ -7,6 +7,7 @@ pipeline {
 		stage('Initialize') {
 			steps {
 				echo 'Initializing....'
+				git url: 'https://github.com/rubilm/mrs.git', branch: 'develop'
 			}
 		}
 		stage('Compile & Test') {
